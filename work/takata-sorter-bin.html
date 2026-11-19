@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Takata AI Sorter Bin | Ray Sama</title>
+<meta name="description" content="A bin that uses machine learning to sort trash from recyclables">
+<meta property="og:title" content="Takata AI Sorter Bin | Ray Sama">
+<meta property="og:description" content="A bin that uses machine learning to sort trash from recyclables">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://iamraygb.github.io/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="wordmark" href="../index.html">Ray Sama</a>
+  <nav aria-label="Primary">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../assets/Ray_Sama_Resume.pdf">R&eacute;sum&eacute;</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+<main id="main" class="case">
+<div class="wrap narrow">
+<a class="back" href="../index.html#work">&larr; All work</a>
+<p class="eyebrow">Physical computing &middot; Machine learning &middot; Arduino</p>
+<h1>Takata AI Sorter Bin</h1>
+<p class="case-kicker">A bin that uses machine learning to sort trash from recyclables</p>
+<dl class="meta"><div><dt>Context</dt><dd>ID 312 Mechanics and Electronics &middot; IoT AI Machine Design</dd></div><div><dt>Timeline</dt><dd>Fall 2025</dd></div><div><dt>My role</dt><dd>Sole designer and builder</dd></div><div><dt>Tools</dt><dd>Arduino Uno R3, 20 kg servo, webcam, image classification model, 1/8&Prime; acrylic, matte PLA</dd></div></dl>
+</div>
+<div class="wrap case-hero"><img src="../assets/img/takata-sorter-bin/hero.jpg" width="1800" height="1013" alt="Takata AI Sorter Bin" loading="eager" data-zoom></div>
+<div class="wrap narrow">
+<section class="block"><h2>The problem</h2><p>Sorting waste correctly takes effort, and people get it wrong. <em>Takata</em> (Swahili for &ldquo;trash&rdquo;) takes that decision off the user: drop something in and the bin decides where it goes.</p></section>
+<section class="block"><h2>My role</h2><p>I designed the mechanism, trained the classifier, wired and programmed the electronics, and fabricated the bin.</p></section>
+<section class="block"><h2>Process</h2><ol class="steps">
+<li class="step"><h3>Teach a model the difference</h3><p>I trained an image classifier on two simple categories, using a plastic bottle for recyclables and a chip bag for trash. Then I refined the classes over several rounds to improve accuracy.</p><div class="figs n2"><figure><img src="../assets/img/takata-sorter-bin/tk-03.jpg" width="1600" height="900" alt="Training samples: recycle vs. trash" loading="lazy" data-zoom><figcaption>Training samples: recycle vs. trash</figcaption></figure><figure><img src="../assets/img/takata-sorter-bin/tk-02.jpg" width="1600" height="900" alt="Concept overview" loading="lazy" data-zoom><figcaption>Concept overview</figcaption></figure></div></li>
+<li class="step"><h3>Turn a prediction into motion</h3><p>The classifier&rsquo;s output is sent to the Arduino, which rotates a servo to one angle for trash and another for recyclables. Reaching a reliable &ldquo;180&deg;&rdquo; on the motor took multiple trials.</p><div class="figs n3"><figure><img src="../assets/img/takata-sorter-bin/tk-04.jpg" width="1600" height="900" alt="Rotation logic" loading="lazy" data-zoom><figcaption>Rotation logic</figcaption></figure><figure><img src="../assets/img/takata-sorter-bin/tk-05.jpg" width="1600" height="900" alt="Circuit diagram" loading="lazy" data-zoom><figcaption>Circuit diagram</figcaption></figure><figure><img src="../assets/img/takata-sorter-bin/tk-06.jpg" width="1600" height="900" alt="Arduino code excerpt" loading="lazy" data-zoom><figcaption>Arduino code excerpt</figcaption></figure></div></li>
+<li class="step"><h3>Build it so it survives people</h3><p>A servo mount and bearing system keep the rotation smooth. The Arduino sits at the bottom, away from users, and the inner compartments include a rotation track and a lid mechanism.</p><div class="figs n3"><figure><img src="../assets/img/takata-sorter-bin/tk-07.jpg" width="1600" height="900" alt="Kit of parts" loading="lazy" data-zoom><figcaption>Kit of parts</figcaption></figure><figure><img src="../assets/img/takata-sorter-bin/tk-09.jpg" width="1600" height="900" alt="Mechanism overview" loading="lazy" data-zoom><figcaption>Mechanism overview</figcaption></figure><figure><img src="../assets/img/takata-sorter-bin/tk-13.jpg" width="1600" height="900" alt="Exploded assembly" loading="lazy" data-zoom><figcaption>Exploded assembly</figcaption></figure></div></li>
+</ol></section>
+<section class="block"><h2>Outcome</h2><p>The final bin is fully operational. Functionality tests showed classification accuracy improving significantly through iteration, and the lid interaction is smooth.</p><div class="figs n2"><figure><img src="../assets/img/takata-sorter-bin/tk-11.jpg" width="1600" height="900" alt="Functionality tests" loading="lazy" data-zoom><figcaption>Functionality tests</figcaption></figure><figure><img src="../assets/img/takata-sorter-bin/tk-16.jpg" width="1600" height="900" alt="Final assembly" loading="lazy" data-zoom><figcaption>Final assembly</figcaption></figure></div></section>
+<a class="next" href="sprout-lamp.html"><span>Next project</span><strong>Sprout Lamp <span aria-hidden="true">&rarr;</span></strong></a>
+</div>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Ray Sama &middot; HCI at NJIT</p>
+  <p><a href="mailto:raysama.bisong@gmail.com">raysama.bisong@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/raysama">LinkedIn</a></p>
+</footer>
+<div class="lightbox" hidden aria-modal="true" role="dialog" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-prev" aria-label="Previous image">&#8249;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Next image">&#8250;</button>
+</div>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

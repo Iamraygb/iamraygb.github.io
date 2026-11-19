@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sprout Lamp | Ray Sama</title>
+<meta name="description" content="A touch lamp that grows when you touch it">
+<meta property="og:title" content="Sprout Lamp | Ray Sama">
+<meta property="og:description" content="A touch lamp that grows when you touch it">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://iamraygb.github.io/assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="wordmark" href="../index.html">Ray Sama</a>
+  <nav aria-label="Primary">
+    <a href="../index.html#work">Work</a>
+    <a href="../index.html#about">About</a>
+    <a href="../assets/Ray_Sama_Resume.pdf">R&eacute;sum&eacute;</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</header>
+<main id="main" class="case">
+<div class="wrap narrow">
+<a class="back" href="../index.html#work">&larr; All work</a>
+<p class="eyebrow">Physical computing &middot; 3D printing &middot; Arduino</p>
+<h1>Sprout Lamp</h1>
+<p class="case-kicker">A touch lamp that grows when you touch it</p>
+<dl class="meta"><div><dt>Context</dt><dd>ID 312 Mechanics and Electronics &middot; Build a Lamp</dd></div><div><dt>Timeline</dt><dd>Fall 2025</dd></div><div><dt>My role</dt><dd>Sole designer and builder</dd></div><div><dt>Tools</dt><dd>Arduino Uno R3, TTP223 touch sensor, addressable LED strip, Tinkercad Circuits, PLA 3D printing</dd></div></dl>
+</div>
+<div class="wrap case-hero"><img src="../assets/img/sprout-lamp/hero.jpg" width="1800" height="1013" alt="Sprout Lamp" loading="eager" data-zoom></div>
+<div class="wrap narrow">
+<section class="block"><h2>The problem</h2><p>The brief was to build a working lamp. I wanted the interaction to carry meaning: touching the lamp should feel like encouraging something to grow.</p></section>
+<section class="block"><h2>My role</h2><p>I worked alone on concept, CAD, printing, circuit and code.</p></section>
+<section class="block"><h2>Process</h2><ol class="steps">
+<li class="step"><h3>Start from growth</h3><p>Sprouting seedlings inspired the form: vines as supports and a plant pod as the head.</p><div class="figs n3"><figure><img src="../assets/img/sprout-lamp/sl-02.jpg" width="1600" height="900" alt="Inspiration: things that sprout" loading="lazy" data-zoom><figcaption>Inspiration: things that sprout</figcaption></figure><figure><img src="../assets/img/sprout-lamp/sl-04.jpg" width="1600" height="900" alt="Exploring forms of growth" loading="lazy" data-zoom><figcaption>Exploring forms of growth</figcaption></figure><figure><img src="../assets/img/sprout-lamp/sl-05.jpg" width="1600" height="900" alt="Final design concept" loading="lazy" data-zoom><figcaption>Final design concept</figcaption></figure></div></li>
+<li class="step"><h3>Fail, diagnose, fix</h3><p>My first print wouldn&rsquo;t adhere to the bed, so I raised the nozzle and bed temperatures for PLA. The thin vines shook against the nozzle, so I reoriented them to print with the body facing the bed.</p><div class="figs n3"><figure><img src="../assets/img/sprout-lamp/sl-06.jpg" width="1600" height="900" alt="Failure 1: bed adhesion" loading="lazy" data-zoom><figcaption>Failure 1: bed adhesion</figcaption></figure><figure><img src="../assets/img/sprout-lamp/sl-07.jpg" width="1600" height="900" alt="Failure 2: vines shaking" loading="lazy" data-zoom><figcaption>Failure 2: vines shaking</figcaption></figure><figure><img src="../assets/img/sprout-lamp/sl-09.jpg" width="1600" height="900" alt="Success: reoriented vines" loading="lazy" data-zoom><figcaption>Success: reoriented vines</figcaption></figure></div></li>
+<li class="step"><h3>Wire the behavior</h3><p>A TTP223 touch sensor feeds the Arduino, which drives 51 of the strip&rsquo;s 60 LEDs through three modes: Off, Sprout and White. I prototyped the circuit in Tinkercad first.</p><div class="figs n2"><figure><img src="../assets/img/sprout-lamp/sl-13.jpg" width="1600" height="900" alt="Circuit diagram" loading="lazy" data-zoom><figcaption>Circuit diagram</figcaption></figure><figure><img src="../assets/img/sprout-lamp/sl-15.jpg" width="1600" height="900" alt="Arduino code" loading="lazy" data-zoom><figcaption>Arduino code</figcaption></figure></div></li>
+</ol></section>
+<section class="block"><h2>Outcome</h2><p>The finished lamp cycles through its modes with a touch.</p><div class="figs n2"><figure><img src="../assets/img/sprout-lamp/sl-18.jpg" width="1600" height="900" alt="Lamp assembled and lit" loading="lazy" data-zoom><figcaption>Lamp assembled and lit</figcaption></figure><figure><img src="../assets/img/sprout-lamp/sl-11.jpg" width="1600" height="900" alt="Printed parts and assembly" loading="lazy" data-zoom><figcaption>Printed parts and assembly</figcaption></figure></div></section>
+<a class="next" href="4cads.html"><span>Next project</span><strong>4CADs <span aria-hidden="true">&rarr;</span></strong></a>
+</div>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Ray Sama &middot; HCI at NJIT</p>
+  <p><a href="mailto:raysama.bisong@gmail.com">raysama.bisong@gmail.com</a> &middot; <a href="https://www.linkedin.com/in/raysama">LinkedIn</a></p>
+</footer>
+<div class="lightbox" hidden aria-modal="true" role="dialog" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-prev" aria-label="Previous image">&#8249;</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Next image">&#8250;</button>
+</div>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
